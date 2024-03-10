@@ -1,10 +1,5 @@
 from collections import Counter
-# n=5
-# m=2
-# a=["a","a","b","a","b"]
-# b=["a","b"]
 n,m =input().split()
-# m=int(input())
 a=[]
 b=[]
 for _ in range(int(n)):
@@ -13,11 +8,9 @@ for _ in range(int(m)):
     b.append(str(input()))
 
 l=[]
-for i in b:
-    # index_word.append("\n")     
+for i in b:   
     index_word=[]
     if a.count(i)!=0:
-        
         for c in range(len(a)):
             if a[c] == i:
                 index_word.append(c+1)
